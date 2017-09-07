@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made with Thimble</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
+    <style>
+        body {
+            font-family: 'Merriweather';
+            padding: 0;
+            font-size: 28px;
+            margin: 0;
+            color: #fff;
+            background: #c13832;
+            text-align: center;
+            height: 100%;
+        }
+
+        .progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, .25);
+            -webkit-animation: progress 5s ease-out;
+                    animation: progress 5s ease-out;
+            z-index: -1;
+        }
+
+        @-webkit-keyframes progress {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes progress {
+            from {
+                width: 0%;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        .content {
+            margin: 32px 16px;
+        }
+
+        h1 {
+            font-size: 4em;
+            margin: 0;
+            padding: 0;
+            text-shadow: 3px 3px 0 #c13832, 8px 8px 0 rgba(0, 0, 0, .3);
+        }
+
+        h1 span {
+            font-size: 1em;
+        }
+
+        p {
+            margin: 32px 0;
+            padding: 0;
+            line-height: 1.5em;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px dashed;
+            -webkit-transition: all .2s ease-in-out;
+            transition: all .2s ease-in-out;
+        }
+
+        a:hover {
+            border-bottom: 3px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="content">
+        <h1>
+            404
+        </h1>
+        <p>
+            You will be redirected to <a href="/">home page</a> within few seconds.
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            setTimeout(function() {
+                window.location = '/';
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
