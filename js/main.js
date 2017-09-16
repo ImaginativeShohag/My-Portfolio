@@ -1,3 +1,11 @@
+/*
+NOTE
+# Bootstrap Used:
+- ScrollSpy
+- CSS: box-sizing: border-box;
+- normalize.css
+ */
+
 $(function() {
 
     $(window).on("load", function() {
@@ -31,20 +39,21 @@ $(function() {
                 loop: false,
                 onComplete: function(self) {
                     setTimeout(function() {
-                        showContactButtons();
+                        // showContactButtons();
+                        showDownButton();
                     }, DELAY_BETWEEN_ELEMENTS_SHORT);
                 }
             });
         }
 
-        function showContactButtons() {
-            $(".profile-contact").fadeIn(function() {
-                setTimeout(function() {
-                    // showSocialButtons();
-                    showDownButton();
-                }, DELAY_BETWEEN_ELEMENTS_SHORT);
-            });
-        }
+        // function showContactButtons() {
+        //     $(".profile-contact").fadeIn(function() {
+        //         setTimeout(function() {
+        //             // showSocialButtons();
+        //             showDownButton();
+        //         }, DELAY_BETWEEN_ELEMENTS_SHORT);
+        //     });
+        // }
 
         // function showSocialButtons() {
         //     $(".profile-social").fadeIn(function() {
@@ -55,10 +64,11 @@ $(function() {
         function showDownButton() {
 
             // var socialButtonPanel = $(".profile-social");
-            var socialButtonPanel = $(".profile-contact");
+            // var socialButtonPanel = $(".profile-contact");
+            var socialButtonPanel = $(".profile-welcome");
             var socialIconBottom = socialButtonPanel.offset().top + socialButtonPanel.outerHeight();
             var totalHeight = $("#one").height();
-            $("#div-intro").css("min-height", totalHeight);
+            //$("#div-intro").css("min-height", totalHeight);
 
             // Bottom Padding of #div-intro: 48
             // Height of .show-more: 64
@@ -98,23 +108,19 @@ $(function() {
 
         function drawParticles() {
             /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-            particlesJS.load('particles-js', 'assets/particles.json', function() {
-                // console.log('callback - particles.js config loaded');
-            });
+            particlesJS.load('particles-js', 'assets/particles.json');
         }
 
         function initializeThings() {
-            // Bootstrap tooltips initialize
-            $('[data-toggle="tooltip"]').tooltip();
 
             // paroller.js initialize
             // If user in Tabs or big devices then only this will on
             // We also set "background-attachment: scroll;"
             // for "#one" element in css using meadia quries.
-            if($(window).width() >= 600)
-            {
-                $(window).paroller();
-            }
+            // if($(window).width() >= 600)
+            // {
+            //     //$(window).paroller();
+            // }
         }
 
         // function drawBackground() {
@@ -200,9 +206,9 @@ $(function() {
     });
 
     // Tooltip manually hide
-    $('[data-toggle="tooltip"]').click(function(){
-        $(this).tooltip("hide");
-    });
+    // $('[data-toggle="tooltip"]').click(function() {
+    //     $(this).tooltip("hide");
+    // });
 
 
 
