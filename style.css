@@ -14,21 +14,8 @@ body {
     background: #f5f5f5;
 }
 
-
-/** {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}*/
-
-
 /* For Timeline Dot */
 
-
-/*:after, :before {
-    -webkit-box-sizing: content-box;
-    box-sizing: content-box;
-}*/
 
 p, a, h1, h2, h3, h4, h5, h6 {
     /* This is the dangerous one in WebKit, as it breaks things wherever */
@@ -42,6 +29,8 @@ p, a, h1, h2, h3, h4, h5, h6 {
     -ms-hyphens: auto;
     hyphens: auto;
     /* Adds a hyphen where the word breaks, if supported (No Blink) */
+
+		text-decoration-skip: ink;
 }
 
 p {
@@ -80,6 +69,7 @@ hr {
     text-align: center;
     max-width: 600px;
     overflow: visible;
+		border-radius: 8px;
 }
 
 hr:after {
@@ -371,7 +361,7 @@ hr:after {
     margin: 0;
     max-width: unset;
     background: rgba(0, 0, 0, .7);
-    min-height: 550px;
+    min-height: 100vh;
 }
 
 .profile-img {
@@ -648,10 +638,11 @@ canvas.particles-js-canvas-el {
     display: inline-block;
     color: #fff;
     font-size: 1em;
-    padding: 0 16px 4px;
+    padding: 3px 16px 4px;
     font-weight: 700;
     background: #f6755e;
     border-radius: 0 0 16px 16px;
+		margin-top: -1px;
 }
 
 .section-title {
