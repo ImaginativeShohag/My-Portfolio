@@ -3,7 +3,10 @@ Use this for remove vendor prefixes:
 https://autoprefixer.github.io/
 
 Filter: last 1 version
- */
+
+https://github.com/css/csso
+https://github.com/css/csso-cli
+*/
 
 body {
     font-family: 'Nunito', sans-serif;
@@ -30,7 +33,7 @@ p, a, h1, h2, h3, h4, h5, h6 {
     hyphens: auto;
     /* Adds a hyphen where the word breaks, if supported (No Blink) */
 
-		text-decoration-skip: ink;
+    text-decoration-skip: ink;
 }
 
 p {
@@ -61,7 +64,7 @@ abbr[title] {
     text-decoration: none;
 }
 
-hr {
+hr.hr {
     margin: 0 auto;
     border: 0;
     padding: 0 8px;
@@ -69,10 +72,10 @@ hr {
     text-align: center;
     max-width: 600px;
     overflow: visible;
-		border-radius: 8px;
+    border-radius: 8px;
 }
 
-hr:after {
+hr.hr:after {
     content: '\2B24';
     display: inline-block;
     position: relative;
@@ -301,17 +304,17 @@ hr:after {
     transition: all .3s ease-in-out;
 }
 
-.nav>li>a {
+.nav > li > a {
     border: none;
     padding: 0;
     padding: 4px 10px;
 }
 
-.nav>li>a:focus {
+.nav > li > a:focus {
     background-color: transparent;
 }
 
-.nav>li>a:hover {
+.nav > li > a:hover {
     background: #f5f5f5;
 }
 
@@ -498,19 +501,15 @@ hr:after {
     opacity: .5;
 }
 
-#el-facebook:hover {
+.el-facebook:hover {
     color: #3b5998;
 }
 
-#el-twitter:hover {
+.el-twitter:hover {
     color: #00aced;
 }
 
-#el-google-plus:hover {
-    color: #dd4b39;
-}
-
-#el-github:hover {
+.el-github:hover {
     color: #4EA6EA;
 }
 
@@ -582,8 +581,8 @@ canvas.particles-js-canvas-el {
 }
 
 .tl-el:hover {
-    -webkit-box-shadow: 0 3px 12px rgba(0, 0, 0, .25);
-    box-shadow: 0 3px 12px rgba(0, 0, 0, .25);
+    -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, .15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, .15);
 }
 
 .tl-el:last-child {
@@ -642,7 +641,7 @@ canvas.particles-js-canvas-el {
     font-weight: 700;
     background: #f6755e;
     border-radius: 0 0 16px 16px;
-		margin-top: -1px;
+    margin-top: -1px;
 }
 
 .section-title {
@@ -670,7 +669,24 @@ canvas.particles-js-canvas-el {
     display: inline-block;
 }
 
-.tl-value {
+.tl-about {
+    font-style: italic;
+    padding: 8px;
+    color: #777777;
+}
+
+.tl-about:before, .tl-about:after {
+    content: '"';
+}
+
+.tl-hr {
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #e5e5e5;
+    width: 200px;
+}
+
+.tl-description {
     padding: 8px;
     color: #666
 }
@@ -679,7 +695,7 @@ canvas.particles-js-canvas-el {
     padding: 8px;
 }
 
-.tl-el>*:last-child {
+.tl-el > *:last-child {
     padding-bottom: 16px;
 }
 
@@ -1298,19 +1314,24 @@ animation: shake 100ms 5 ease-in-out 0s;
         background-attachment: fixed;
         /*background-position-y: 0px;*/
     }
+
     .profile-img {
         margin: 32px 0;
     }
+
     .profile-img img {
         width: 220px;
         height: 220px;
     }
+
     .title {
         font-size: 2.5em;
     }
+
     .bio {
         font-size: 1.6em;
     }
+
     .contact-info {
         font-size: 1em;
     }
@@ -1324,12 +1345,15 @@ animation: shake 100ms 5 ease-in-out 0s;
     .index {
         display: block;
     }
+
     #one .section {
         padding-left: 16px;
     }
+
     .section, .hr-section {
         padding-left: 300px;
     }
+
     .show-more {
         /*padding-left: 270px;*/
     }
@@ -1339,6 +1363,7 @@ animation: shake 100ms 5 ease-in-out 0s;
     .section, .hr-section {
         padding-left: 250px;
     }
+
     .section {
         max-width: 1024px;
     }

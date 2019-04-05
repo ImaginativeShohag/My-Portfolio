@@ -7,6 +7,7 @@
       "Java",
       "PHP"
     ],
+    "about": "A Bangla-English-Bangla full-featured offline Dictionary.",
     "description": "Self hobby project.",
     "link": "https://play.google.com/store/apps/details?id=org.imaginativeworld.shadhinovidhan",
     "link_title": "Google Play"
@@ -18,6 +19,7 @@
       "C",
       "C++"
     ],
+    "about": false,
     "description": "Represented IIUC in ― <strong>ACM ICPC Programming Contest 2015 - Dhaka regional</strong> as team \"IIUC_traitorz\".",
     "link": false
   },
@@ -32,8 +34,10 @@
       "HTML",
       "CSS"
     ],
+    "about": "ICT Tutor is the base of Interactive ICT project. Shunno Community is a full-featured question-answer platform for students, created for Interactive ICT.",
     "description": "Project Leader and developed with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", which was awarded <strong>1st Runner</strong> up in <strong>EATL Prothom Alo App Contest - 2016</strong>.",
-    "link": false
+    "link": "https://ask.imaginativeworld.org",
+    "link_title": "Shunno Community"
   },
   "3": {
     "year": "2017",
@@ -43,6 +47,7 @@
       "W3.CSS",
       "jQuery"
     ],
+    "about": "A platform for volunteers to maintain their groups and quickly get help on disaster.",
     "description": "Developed with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", build for disaster management category for <strong>SS12 Project Competition 2017</strong> organized by <strong>IEEE BDS HAC</strong>.",
     "link": false
   },
@@ -55,6 +60,7 @@
       "Bootstrap",
       "jQuery"
     ],
+    "about": "A social-networking web platform for Bangladeshi travelers. The web app can suggest users where to go on a specific season based on historical data.",
     "description": "Developed with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", which presented in <strong>SUST Hackathon 2017</strong>.",
     "link": false
   },
@@ -68,8 +74,48 @@
       "HTML",
       "CSS"
     ],
+    "about": "An interactive learning app and an alternative to Computer for Inter Students. It has full-featured HTML Editor, C Compiler, SQL Simulator and Encryption Simulator. Its unique and powerful dynamic solution feature can give step by step solution of 18 types of number-system related math problem.",
     "description": "Was Project Leader and developed it with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", which was presented in <strong>App Development Competition</strong> at <strong>IUT 9th ICT Fest 2017</strong> and \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\" was selected as the <strong>Champion</strong>.",
     "link": "https://play.google.com/store/apps/details?id=team.shunno.interactiveict",
+    "link_title": "Google Play"
+  },
+  "6": {
+    "year": "2018",
+    "title": "Education Management System",
+    "tags": [
+      "Laravel",
+      "Bootstrap",
+      "JS"
+    ],
+    "about": "A full-featured Education Management System for School. It has stuff-teacher-student management, attendance, automated result generation, automated promotion with roll distribution, SMS, advanced search, report generation with print etc.",
+    "description": "Developed with \"Team Shunno\" for KDA IT. My part was designing the front-end and automate the marking, result generation, and roll generation.",
+    "link": false
+  },
+  "7": {
+    "year": "2019",
+    "title": "BRG Food Delivery",
+    "tags": [
+      "Android",
+      "Java",
+      "PHP"
+    ],
+    "about": "BRG Food Delivery is a food delivery app for Barcode Restaurant Group.",
+    "description": "Developed for Octoriz Pvt. Ltd. I designed the layouts, connect the app with the server APIs, implement secure token authentication and authentication related features for the App.",
+    "link": false
+  },
+  "8": {
+    "year": "2019",
+    "title": "Locafie",
+    "tags": [
+      "Android",
+      "Java",
+      "Firestore",
+      "GMaps",
+      "FCM"
+    ],
+    "about": "Locafie is a community-driven school/university bus location sharing-tracking app. Any volunteer from a bus can share real-time bus location and others can track the bus in real-time.",
+    "description": "Developed for Octoriz Pvt. Ltd. I’m the lead developer of this project. I used the Firestore database and Google Maps API to develop this real-time tracking app.",
+    "link": "https://play.google.com/store/apps/details?id=com.octoriz.locafie",
     "link_title": "Google Play"
   }
 }
