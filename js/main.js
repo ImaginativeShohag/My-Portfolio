@@ -16,9 +16,9 @@ $(function () {
 
         $(".profile-img").addClass("ready");
 
-        var DELAY_BETWEEN_ELEMENTS_LONG = 1; //1000
-        var DELAY_BETWEEN_ELEMENTS_SHORT = 1; //500
-        var TYPE_SPEED = 1; // 25
+        var DELAY_BETWEEN_ELEMENTS_LONG = 1000; //1000
+        var DELAY_BETWEEN_ELEMENTS_SHORT = 500; //500
+        var TYPE_SPEED = 16; // 25
 
         var typedTitle = new Typed(".profile-welcome .title", {
             stringsElement: '.for-title',
@@ -41,8 +41,9 @@ $(function () {
                 loop: false,
                 onComplete: function (self) {
                     setTimeout(function () {
-                        // showContactButtons();
+
                         showDownButton();
+
                     }, DELAY_BETWEEN_ELEMENTS_SHORT);
                 }
             });
@@ -53,7 +54,6 @@ $(function () {
             var socialButtonPanel = $(".profile-welcome");
             var socialIconBottom = socialButtonPanel.offset().top + socialButtonPanel.outerHeight();
             var totalHeight = $("#one").height();
-            //$("#div-intro").css("min-height", totalHeight);
 
             // Bottom Padding of #div-intro: 48
             // Height of .show-more: 64
@@ -81,21 +81,71 @@ $(function () {
 
                 showNavBox();
 
-                initializeThings();
+                sortLangSkills();
+
+                sortFrameworkSkills();
 
             });
-        }
-
-        function showNavBox() {
-            $("nav").css("display", "");
         }
 
         function drawParticles() {
             particlesJS.load('particles-js', 'assets/particles.json');
         }
 
-        function initializeThings() {
+        function showNavBox() {
+            $("nav").css("display", "");
+        }
 
+        function sortLangSkills() {
+
+            var languages = [
+                "C",
+                "C++",
+                "Java",
+                "JavaScript",
+                "PHP",
+                "Python"
+            ];
+
+            languages.sort();
+
+            var langSkillParent = document.querySelector('#div-lang-skills .skill-tags .el-spans');
+
+            languages.forEach(function (value) {
+
+                var el_span = document.createElement('span');
+                el_span.innerText = value;
+
+                langSkillParent.append(el_span);
+
+            });
+
+        }
+
+        function sortFrameworkSkills() {
+
+            var frameworks = [
+                "Android",
+                "Django",
+                "Laravel",
+                "jQuery",
+                "Firestore Database",
+                "Firebase Realtime Database",
+                "Google Maps API"
+            ];
+
+            frameworks.sort();
+
+            var techSkillParent = document.querySelector('#div-tech-skills .skill-tags .el-spans');
+
+            frameworks.forEach(function (value) {
+
+                var el_span = document.createElement('span');
+                el_span.innerText = value;
+
+                techSkillParent.append(el_span);
+
+            });
 
         }
 
@@ -134,15 +184,22 @@ $(function () {
 
 
     // Nav bar will hide when intro page is visible
-    var navEl = $("#nav");
+    // var $navEl = $("#nav");
 
-    navEl.on('activate.bs.scrollspy', function () {
-        var spyedElId = $("#nav li.active > a").attr("href");
+    // $(window).scrollspy({target: '#nav'});
 
-        if (spyedElId == "#one") {
-            $(this).removeClass("nav-show");
+    // $(window).on('activate.bs.scrollspy', function () {
+    //     console.log("This event is not firing...");
+    // });
+
+    $(window).on('activate.bs.scrollspy', function (e, obj) {
+
+        var spyedElId = $("#nav li > a.active").attr("href");
+
+        if (spyedElId === "#one") {
+            $("#nav").removeClass("nav-show");
         } else {
-            $(this).addClass("nav-show");
+            $("#nav").addClass("nav-show");
         }
 
     });

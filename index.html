@@ -14,10 +14,13 @@
     <meta name="robots" content="index,follow">
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.min.css?v=17110700">
+    <link rel="stylesheet" href="style.min.css?v=1904060000">
 
 </head>
 
@@ -49,13 +52,14 @@
 </div>
 
 <nav class="index" id="nav" style="display:none;">
-    <ul class="nav">
-        <li class="active"><a href="#one">Intro</a></li>
-        <li><a href="#div-study">Academic Qualifications</a></li>
-        <li><a href="#div-lang-skills">Programming Language Skill</a></li>
-        <li><a href="#div-projects">Participation & Achievements</a></li>
-        <li><a href="#div-links">Links</a></li>
-        <li><a href="#div-contact-links">Get In Touch</a></li>
+    <ul class="nav flex-column">
+        <li class="nav-item"><a class="nav-link active" href="#one">Intro</a></li>
+        <li class="nav-item"><a class="nav-link" href="#div-study">Academic Qualifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#div-lang-skills">Programming Language Skill</a></li>
+        <li class="nav-item"><a class="nav-link" href="#div-tech-skills">Technology & Framework Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#div-projects">Projects & Achievements</a></li>
+        <li class="nav-item"><a class="nav-link" href="#div-links">Links</a></li>
+        <li class="nav-item"><a class="nav-link" href="#div-contact-links">Get In Touch</a></li>
     </ul>
 </nav>
 
@@ -78,12 +82,12 @@
                                          href="https://imaginativeworld.org/">Imaginative World</a></strong> and<br>Co-Founder
                     of <strong><a target="_blank" href="https://www.facebook.com/TeamShunno/">Team Shunno</a></strong>.^500
                     <br>Student, App Developer, Blogger, Coder and <abbr data-toggle="tooltip" tooltip="Linux"><i
-                            class="fa fa-linux" aria-hidden="true"></i></abbr> Lover.</p>
+                            class="fab fa-linux"></i></abbr> Lover.</p>
             </div>
         </div>
 
         <div class="show-more el-hide">
-            <a id="go-to-more" href="#"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a id="go-to-more" href="#"><i class="fas fa-chevron-down"></i></a>
         </div>
 
     </div>
@@ -131,14 +135,7 @@
         <h1 class="section-title">Programming Language Skills</h1>
 
         <div class="skill-tags">
-            <p class="el-spans">
-                <span>C</span>
-                <span>C++</span>
-                <span>Java</span>
-                <span>JavaScript</span>
-                <span>PHP</span>
-                <span>Python</span>
-            </p>
+            <p class="el-spans"></p>
         </div>
 
     </div>
@@ -147,20 +144,12 @@
         <hr class="hr">
     </div>
 
-    <div class="section coding-skill center-el" id="div-tech-skills">
+    <div class="section tech-skill center-el" id="div-tech-skills">
 
-        <h1 class="section-title">Technology / Framework Skills</h1>
+        <h1 class="section-title">Technology & Framework Skills</h1>
 
         <div class="skill-tags">
-            <p class="el-spans">
-                <span>Android</span>
-                <span>Django</span>
-                <span>Laravel</span>
-                <span>jQuery</span>
-                <span>Firestore Database</span>
-                <span>Firebase Realtime Database</span>
-                <span>Google Maps API</span>
-            </p>
+            <p class="el-spans"></p>
         </div>
 
     </div>
@@ -171,7 +160,7 @@
 
     <div class="section achievement-timeline" id="div-projects">
 
-        <h1 class="section-title">Participation & Achievements</h1>
+        <h1 class="section-title">Projects & Achievements</h1>
 
         <div class="timeline">
 
@@ -209,28 +198,50 @@
 
         <h1 class="section-title">Links</h1>
 
-        <ul class="link-collections box-double">
-            <li>
-                <i class="fa fa-flask" aria-hidden="true"></i><a target="_blank" href="https://imaginativeworld.org/">My
-                Experiments</a>
-            </li>
-            <li>
-                <i class="fa fa-globe" aria-hidden="true"></i><a target="_blank"
-                                                                 href="https://iwwintricks.wordpress.com/">My Bangla
-                Weblog</a>
-            </li>
-            <li>
-                <i class="fa fa-linux" aria-hidden="true"></i><a target="_blank"
-                                                                 href="https://shunnobindu.wordpress.com">My Linux
-                Weblog</a>
-            </li>
-            <li>
-                <i class="fa fa-code" aria-hidden="true"></i><a target="_blank"
-                                                                href="https://code.imaginativeworld.org/">Tutorial
-                Site</a>
-            </li>
+        <div class="link-collections row justify-content-center">
 
-        </ul>
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://imaginativeworld.org">
+                    <i class="fas fa-flask"></i>
+                    <p>My Experiments</p>
+                </a>
+            </div>
+
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://iwwintricks.wordpress.com">
+                    <i class="fas fa-globe-asia"></i>
+                    <p>My Bangla Weblog</p>
+                </a>
+            </div>
+
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://shunnobindu.wordpress.com">
+                    <i class="fab fa-linux"></i>
+                    <p>My Linux Weblog</p>
+                </a>
+            </div>
+
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://code.imaginativeworld.org">
+                    <i class="fas fa-code"></i>
+                    <p>Tutorial Site</p>
+                </a>
+            </div>
+
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://github.com/ImaginativeWorld">
+                    <i class="fab fa-github"></i>
+                    <p>@ImaginativeWorld</p>
+                </a>
+            </div>
+
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://github.com/TeamShunno">
+                    <i class="fab fa-github"></i>
+                    <p>@TeamShunno</p>
+                </a>
+            </div>
+        </div>
 
     </div>
 
@@ -244,10 +255,13 @@
 
         <ul class="contact-info">
 
-            <li><i class="fa fa-phone" aria-hidden="true"></i><a target="_blank" href="tel:+8801813173443">+88 01813
-                173443</a></li>
-            <li><i class="fa fa-envelope" aria-hidden="true"></i><a target="_blank"
-                                                                    href="mailto:imaginativeshohag@yahoo.com">imaginativeshohag@yahoo.com</a>
+            <li>
+                <i class="fas fa-phone"></i>
+                <a target="_blank" href="tel:+8801813173443">+88 01813 173 443</a>
+            </li>
+            <li>
+                <i class="fas fa-envelope"></i>
+                <a target="_blank" href="mailto:imaginativeshohag@gmail.com">imaginativeshohag@gmail.com</a>
             </li>
 
         </ul>
@@ -256,40 +270,16 @@
             <a target="_blank" data-toggle="tooltip" tooltip="@imaginativeshohag"
                href="https://www.facebook.com/imaginativeshohag" class="el-facebook el-icon-button">
                     <span class="fa-stack fa-lg">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x el-black"></i>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x el-black"></i>
                     </span>
             </a>
 
             <a target="_blank" data-toggle="tooltip" tooltip="@shohag_iw"
                href="https://twitter.com/shohag_iw" class="el-twitter el-icon-button">
                     <span class="fa-stack fa-lg">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-twitter fa-stack-1x el-black"></i>
-                    </span>
-            </a>
-
-            <a target="_blank" data-toggle="tooltip" tooltip="@ImaginativeShohag"
-               href="https://github.com/ImaginativeShohag" class="el-github el-icon-button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x el-black"></i>
-                    </span>
-            </a>
-
-            <a target="_blank" data-toggle="tooltip" tooltip="@ImaginativeWorld"
-               href="https://github.com/ImaginativeWorld" class="el-github el-icon-button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x el-black"></i>
-                    </span>
-            </a>
-
-            <a target="_blank" data-toggle="tooltip" tooltip="@TeamShunno"
-               href="https://github.com/TeamShunno" class="el-github el-icon-button">
-                    <span class="fa-stack fa-lg">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-github fa-stack-1x el-black"></i>
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x el-black"></i>
                     </span>
             </a>
         </div>
@@ -300,7 +290,7 @@
     <footer class="section">
         <p class="the-end"></p>
         <div class="credits">
-            <p><i class="fa fa-map-marker" aria-hidden="true"></i> <strong>Bangladesh</strong></p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh</strong></p>
             <p>
                 This web page coded with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>,
                 <a target="_blank" href="https://elrumordelaluz.github.io/csshake/">CSShake</a>,
@@ -308,16 +298,18 @@
                                                                                       href="https://jquery.com">jQuery</a>,
                 <a target="_blank" href="http://vincentgarreau.com/particles.js/">particles.js</a>,
                 <a target="_blank" href="http://tobiasahlin.com/spinkit/">SpinKit</a> and
-                <a target="_blank" href="http://www.mattboldt.com/demos/typed-js/">Typed.js</a> using <a target="_blank"
-                                                                                                         href="https://atom.io/">Atom</a>
+                <a target="_blank" href="http://www.mattboldt.com/demos/typed-js/">Typed.js</a> using
+                <del><a target="_blank"
+                        href="https://atom.io/">Atom</a></del>
+                PhpStorm
                 by <abbr data-toggle="tooltip" tooltip="Md. Mahmudul Hasan Shohag">Me</abbr>.
             </p>
             <p>Hosting support ― <a target="_blank" href="http://service.luckyfm.info/">Dhrubok All Rounder</a>.</p>
-            <p>Please use the latest version of <i class="fa fa-firefox" aria-hidden="true"></i>
-                <strong>Firefox</strong> or <i class="fa fa-chrome" aria-hidden="true"></i> <strong>Chrome</strong> for
+            <p>Please use the latest version of <i class="fab fa-firefox"></i>
+                <strong>Firefox</strong> or <i class="fab fa-chrome"></i> <strong>Chrome</strong> for
                 the best experience.</p>
             <p>
-                <small>Last updated on ― 1 April 2019 (v1.7).</small>
+                <small>Last updated on ― 6 April 2019 (v1.8).</small>
             </p>
         </div>
     </footer>
@@ -326,17 +318,24 @@
 </div>
 
 <!-- JS -->
-<script src="https://use.fontawesome.com/5e04954766.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-<script src="js/main.min.js?v=19041100"></script>
+<script src="js/main.min.js?v=1904060000"></script>
 
 </body>
 
