@@ -155,10 +155,10 @@ function showNavBox() {
 function initSiteInfo(info) {
     const element = document.querySelector('#iw-site-info');
 
-    element.innerHTML = "Last updated on ― " + info.updated_at + " (v" + info.version + ")."
+    element.innerHTML = "Last updated on ― " + info.updated_at + " (v" + info.version + ").";
 }
 
-function sortLangSkills(languages) {
+function initLangSkills(languages) {
 
     languages.sort(objCompareFn);
 
@@ -174,9 +174,9 @@ function sortLangSkills(languages) {
         elSpan.innerText = obj.name;
 
         if (obj.active) {
-            elSpan.classList.add("active")
-            elSpan.setAttribute("data-toggle", "tooltip")
-            elSpan.setAttribute("title", "Recently Working On")
+            elSpan.classList.add("active");
+            elSpan.setAttribute("data-toggle", "tooltip");
+            elSpan.setAttribute("title", "Recently Working On");
         }
 
         langSkillParent.append(elSpan);
@@ -185,13 +185,13 @@ function sortLangSkills(languages) {
 
 }
 
-function sortFrameworkSkills(frameworks) {
+function initFrameworkSkills(frameworks) {
 
     frameworks.sort(objCompareFn);
 
     const techSkillParent = document.querySelector('#div-tech-skills .skill-tags .el-spans');
 
-    techSkillParent.innerHTML = ''
+    techSkillParent.innerHTML = '';
 
     for (let i = 0; i < frameworks.length; i++) {
 
@@ -201,9 +201,9 @@ function sortFrameworkSkills(frameworks) {
         elSpan.innerText = obj.name;
 
         if (obj.active) {
-            elSpan.classList.add("active")
-            elSpan.setAttribute("data-toggle", "tooltip")
-            elSpan.setAttribute("title", "Recently Working On")
+            elSpan.classList.add("active");
+            elSpan.setAttribute("data-toggle", "tooltip");
+            elSpan.setAttribute("title", "Recently Working On");
         }
 
         techSkillParent.append(elSpan);
@@ -214,6 +214,8 @@ function sortFrameworkSkills(frameworks) {
 
 function initAchievements(achievements) {
 
+    achievements.reverse();
+
     const timelineParent = document.querySelector('#timeline-parent');
     timelineParent.innerHTML = ''
 
@@ -222,52 +224,52 @@ function initAchievements(achievements) {
         const obj = achievements[i];
 
         const tlEl = document.createElement("div");
-        tlEl.classList.add("tl-el")
-        timelineParent.append(tlEl)
+        tlEl.classList.add("tl-el");
+        timelineParent.append(tlEl);
 
         const pTlType = document.createElement("p");
-        pTlType.classList.add("tl-type")
-        pTlType.innerHTML = obj.year
-        tlEl.append(pTlType)
+        pTlType.classList.add("tl-type");
+        pTlType.innerHTML = obj.year;
+        tlEl.append(pTlType);
 
         const pTlTitle = document.createElement("p");
-        pTlTitle.classList.add("tl-title")
-        pTlTitle.innerHTML = obj.title
-        tlEl.append(pTlTitle)
+        pTlTitle.classList.add("tl-title");
+        pTlTitle.innerHTML = obj.title;
+        tlEl.append(pTlTitle);
 
         const pTlTags = document.createElement("p");
-        pTlTags.classList.add("tl-tags")
+        pTlTags.classList.add("tl-tags");
         pTlTags.innerHTML = '<span>' + obj.tags.join("</span><span>") + '</span>'
-        tlEl.append(pTlTags)
+        tlEl.append(pTlTags);
 
         if (obj.about !== false) {
             const pTlAbout = document.createElement("p");
-            pTlAbout.classList.add("tl-about")
-            pTlAbout.innerHTML = obj.about
-            tlEl.append(pTlAbout)
+            pTlAbout.classList.add("tl-about");
+            pTlAbout.innerHTML = obj.about;
+            tlEl.append(pTlAbout);
 
             const pTlHr = document.createElement("hr");
             pTlHr.classList.add("tl-hr")
-            tlEl.append(pTlHr)
+            tlEl.append(pTlHr);
         }
 
         const pTlDesc = document.createElement("p");
-        pTlDesc.classList.add("tl-description")
-        pTlDesc.innerHTML = obj.description
-        tlEl.append(pTlDesc)
+        pTlDesc.classList.add("tl-description");
+        pTlDesc.innerHTML = obj.description;
+        tlEl.append(pTlDesc);
 
         if ("link" in obj || "previews" in obj) {
 
             const btnDivContainer = document.createElement("div");
-            btnDivContainer.classList.add("dl-box")
-            tlEl.append(btnDivContainer)
+            btnDivContainer.classList.add("dl-box");
+            tlEl.append(btnDivContainer);
 
             if ("link" in obj) {
                 const btn = document.createElement("a");
-                btn.classList.add("btn-full-block")
-                btn.setAttribute("target", "_blank")
-                btn.setAttribute("href", obj.link)
-                btn.innerHTML = '<i class="fas fa-download"></i> ' + obj.link_title
+                btn.classList.add("btn-full-block");
+                btn.setAttribute("target", "_blank");
+                btn.setAttribute("href", obj.link);
+                btn.innerHTML = '<i class="fas fa-download"></i> ' + obj.link_title;
                 btnDivContainer.append(btn);
             }
 
@@ -276,9 +278,9 @@ function initAchievements(achievements) {
                 let previewImageList = obj.previews;
 
                 const btn = document.createElement("button");
-                btn.classList.add("btn-full-block")
-                btn.innerHTML = '<i class="far fa-images"></i> ' + "Screenshots"
-                btnDivContainer.append(btn)
+                btn.classList.add("btn-full-block");
+                btn.innerHTML = '<i class="far fa-images"></i> ' + "Screenshots";
+                btnDivContainer.append(btn);
 
                 btn.addEventListener("click", function () {
 
@@ -303,27 +305,76 @@ function initAchievements(achievements) {
 
 }
 
+function initJobs(jobs) {
+
+    jobs.reverse();
+
+    const timelineParent = document.querySelector('#job-timeline-parent');
+    timelineParent.innerHTML = '';
+
+    for (let i = 0; i < jobs.length; i++) {
+
+        const obj = jobs[i];
+
+        const tlEl = document.createElement("div");
+        tlEl.classList.add("tl-el");
+        timelineParent.append(tlEl);
+
+        const pTlType = document.createElement("p");
+        pTlType.classList.add("tl-type");
+        pTlType.innerHTML = obj.start_date + " ― " + obj.end_date;
+        tlEl.append(pTlType)
+
+        const pTlTitle = document.createElement("p");
+        pTlTitle.classList.add("tl-title");
+        pTlTitle.innerHTML = obj.company_name;
+        tlEl.append(pTlTitle);
+
+        const pTlDesc = document.createElement("p");
+        pTlDesc.classList.add("tl-description");
+        pTlDesc.innerHTML = obj.position;
+        tlEl.append(pTlDesc);
+
+        if (obj.web_url != null) {
+            const btnDivContainer = document.createElement("div");
+            btnDivContainer.classList.add("dl-box");
+            tlEl.append(btnDivContainer);
+
+            const btn = document.createElement("a");
+            btn.classList.add("btn-full-block");
+            btn.setAttribute("target", "_blank");
+            btn.setAttribute("href", obj.web_url);
+            btn.innerHTML = '<i class="fas fa-globe-asia"></i> Website';
+            btnDivContainer.append(btn);
+        }
+
+    }
+
+}
+
 function initLongBio(longBio) {
 
     const timelineParent = document.querySelector('#div-bio p');
 
-    timelineParent.innerHTML = longBio
+    timelineParent.innerHTML = longBio;
 
 }
 
 function initInformation() {
 
-    $.getJSON("json/db.json?v=1", function (data) {
+    $.getJSON("json/db.json?v=2", function (data) {
 
         initSiteInfo(data.info);
 
         initLongBio(data.long_bio)
 
-        sortLangSkills(data.languages);
+        initLangSkills(data.languages);
 
-        sortFrameworkSkills(data.frameworks);
+        initFrameworkSkills(data.frameworks);
 
         initAchievements(data.achievements);
+
+        initJobs(data.jobs);
 
         $('[data-toggle="tooltip"]').tooltip();
 

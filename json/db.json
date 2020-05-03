@@ -1,7 +1,7 @@
 {
     "info": {
-        "version": "2.1",
-        "updated_at": "3 May 2020"
+        "version": "2.2",
+        "updated_at": "4 May 2020"
     },
     "long_bio": "I’m currently a full-stack <strong>Android</strong> Apps \uD83D\uDCF1 developer and have experience in full-stack <strong>Web</strong> \uD83C\uDF10 development. I’m an <strong>open-source</strong> enthusiast and a die-hard <strong>Linux</strong> \uD83D\uDC27 fan. I love to solve <strong>challenging</strong> problems, working with <strong>new</strong> technologies, and <strong>learn</strong> new things. Alhamdulillah, I’m a <strong>quick learner</strong> and good at <strong>finding bugs</strong> \uD83D\uDC1E. Coding is my passion and hobby. My rule is to maintain all coding conventions and write self-descriptive codes. Finally, I’m <strong>friendly</strong>, <strong>group-oriented</strong>, and <strong>awesome</strong> \uD83D\uDE0E.",
     "frameworks": [
@@ -86,6 +86,29 @@
         {
             "name": "Bash",
             "active": false
+        }
+    ],
+    "jobs": [
+        {
+            "company_name": "KDA IT",
+            "web_url": null,
+            "position": "Software Engineer",
+            "start_date": "15 Apr 2018",
+            "end_date": "10 Jul 2018"
+        },
+        {
+            "company_name": "Octoriz Private Limited",
+            "web_url": "https://octoriz.com",
+            "position": "Junior Android Developer",
+            "start_date": "15 Nov 2018",
+            "end_date": "20 Apr 2019"
+        },
+        {
+            "company_name": "Dream71 Bangladesh Ltd.",
+            "web_url": "http://www.dream71.com",
+            "position": "Android Developer",
+            "start_date": "15 May 2019",
+            "end_date": "Present"
         }
     ],
     "achievements": [
