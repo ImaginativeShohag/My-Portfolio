@@ -15,12 +15,14 @@
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,800" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.min.css?v=1904060000">
+    <link rel="stylesheet" href="libs/photoswipe/photoswipe.min.css">
+    <link rel="stylesheet" href="libs/photoswipe/default-skin/default-skin.min.css">
+
+    <link rel="stylesheet" href="style.min.css?v=2000000000">
 
 </head>
 
@@ -53,13 +55,30 @@
 
 <nav class="index" id="nav" style="display:none;">
     <ul class="nav flex-column">
-        <li class="nav-item"><a class="nav-link active" href="#one">Intro</a></li>
-        <li class="nav-item"><a class="nav-link" href="#div-study">Academic Qualifications</a></li>
-        <li class="nav-item"><a class="nav-link" href="#div-lang-skills">Programming Language Skill</a></li>
-        <li class="nav-item"><a class="nav-link" href="#div-tech-skills">Technology & Framework Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#div-projects">Projects & Achievements</a></li>
-        <li class="nav-item"><a class="nav-link" href="#div-links">Links</a></li>
-        <li class="nav-item"><a class="nav-link" href="#div-contact-links">Get In Touch</a></li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#one">Intro</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#div-bio">Biography</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#div-study">Academic Qualifications</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#div-lang-skills">Programming Languages</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#div-tech-skills">Technologies & Frameworks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#div-projects">Projects & Achievements</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#div-links">Links</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#div-contact-links">Get In Touch</a>
+        </li>
     </ul>
 </nav>
 
@@ -78,10 +97,10 @@
             </div>
             <p class="bio"></p>
             <div class="for-bio el-hide">
-                <p>Founder of <strong><a data-toggle="tooltip" tooltip="Be Imaginative" target="_blank"
+                <p>Founder of <strong><a data-toggle="tooltip" title="Be Imaginative" target="_blank"
                                          href="https://imaginativeworld.org/">Imaginative World</a></strong> and<br>Co-Founder
                     of <strong><a target="_blank" href="https://www.facebook.com/TeamShunno/">Team Shunno</a></strong>.^500
-                    <br>Student, App Developer, Blogger, Coder and <abbr data-toggle="tooltip" tooltip="Linux"><i
+                    <br>Student, App Developer, Blogger, Coder and <abbr data-toggle="tooltip" title="Linux"><i
                             class="fab fa-linux"></i></abbr> Lover.</p>
             </div>
         </div>
@@ -96,6 +115,22 @@
 <div class="the-rest">
 
     <div id="particles-js"></div>
+
+    <div class="section long-bio center-el" id="div-bio">
+
+        <h1 class="section-title">Biography</h1>
+
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+            </p>
+        </div>
+    </div>
+
+    <div class="hr-section">
+        <hr class="hr">
+    </div>
 
     <div class="section study-timeline" id="div-study">
 
@@ -132,10 +167,12 @@
 
     <div class="section coding-skill center-el" id="div-lang-skills">
 
-        <h1 class="section-title">Programming Language Skills</h1>
+        <h1 class="section-title">Programming Languages</h1>
 
         <div class="skill-tags">
-            <p class="el-spans"></p>
+            <p class="el-spans">
+                <span>Lorem ipsum</span>
+            </p>
         </div>
 
     </div>
@@ -146,10 +183,12 @@
 
     <div class="section tech-skill center-el" id="div-tech-skills">
 
-        <h1 class="section-title">Technology & Framework Skills</h1>
+        <h1 class="section-title">Technologies & Frameworks</h1>
 
         <div class="skill-tags">
-            <p class="el-spans"></p>
+            <p class="el-spans">
+                <span>Lorem ipsum</span>
+            </p>
         </div>
 
     </div>
@@ -162,29 +201,23 @@
 
         <h1 class="section-title">Projects & Achievements</h1>
 
-        <div class="timeline">
+        <div id="timeline-parent" class="timeline">
 
-            <!--<div class="tl-el"><p class="tl-type">2014</p>-->
-            <!--<p class="tl-title">Shadhin Ovidhan Android</p>-->
-            <!--<p class="tl-tags"><span>Android</span><span>Java</span><span>PHP</span></p>-->
-            <!--<p class="tl-about">An interactive learning app and an alternative to Computer for Inter-->
-            <!--Students. It has full-featured HTML Editor, C Compiler, SQL Simulator and-->
-            <!--Encryption Simulator. Its unique and powerful dynamic solution feature can-->
-            <!--give step by step solution of 18 types of number- system related math-->
-            <!--problem.</p>-->
-            <!--<hr class="tl-hr">-->
-            <!--<p class="tl-description">Was Project Leader and developed it with "Team Shunno", which was-->
-            <!--presented in App Development Competition at IUT 9th ICT Fest 2017 and-->
-            <!--"Team Shunno" was selected as the Champion. It was download over 5k-->
-            <!--from Google Play store.</p>-->
-            <!--<div class="dl-box">-->
-            <!--<a class="btn-full-block"-->
-            <!--target="_blank"-->
-            <!--href="https://play.google.com/store/apps/details?id=org.imaginativeworld.shadhinovidhan">-->
-            <!--Google Play-->
-            <!--</a>-->
-            <!--</div>-->
-            <!--</div>-->
+            <div class="tl-el">
+                <p class="tl-type">2014</p>
+                <p class="tl-title">Shadhin Ovidhan Android</p>
+                <p class="tl-tags"><span>Android</span><span>Java</span><span>PHP</span></p>
+                <p class="tl-about">A Bangla-English-Bangla full-featured offline Dictionary.</p>
+                <hr class="tl-hr">
+                <p class="tl-description">Self hobby project.</p>
+                <div class="dl-box">
+                    <a class="btn-full-block"
+                       target="_blank"
+                       href="https://play.google.com/store/apps/details?id=org.imaginativeworld.shadhinovidhan">
+                        Google Play
+                    </a>
+                </div>
+            </div>
 
         </div>
 
@@ -208,7 +241,7 @@
             </div>
 
             <div class="col-6 col-sm-3 p-2">
-                <a target="_blank" href="https://iwwintricks.wordpress.com">
+                <a target="_blank" href="https://shunnokhata.wordpress.com">
                     <i class="fas fa-globe-asia"></i>
                     <p>My Bangla Weblog</p>
                 </a>
@@ -225,6 +258,20 @@
                 <a target="_blank" href="https://code.imaginativeworld.org">
                     <i class="fas fa-code"></i>
                     <p>Tutorial Site</p>
+                </a>
+            </div>
+
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://stackoverflow.com/users/2263329/mahmudul-hasan-shohag">
+                    <i class="fab fa-stack-overflow"></i>
+                    <p>Stack Overflow</p>
+                </a>
+            </div>
+
+            <div class="col-6 col-sm-3 p-2">
+                <a target="_blank" href="https://github.com/ImaginativeShohag">
+                    <i class="fab fa-github"></i>
+                    <p>@ImaginativeShohag</p>
                 </a>
             </div>
 
@@ -257,17 +304,18 @@
 
             <li>
                 <i class="fas fa-phone"></i>
-                <a target="_blank" href="tel:+8801813173443">+88 01813 173 443</a>
+                <a class="iw-btn" target="_blank" href="tel:+8801813173443">+88 01813 173 443</a>
             </li>
             <li>
                 <i class="fas fa-envelope"></i>
-                <a target="_blank" href="mailto:imaginativeshohag@gmail.com">imaginativeshohag@gmail.com</a>
+                <a class="iw-btn" target="_blank"
+                   href="mailto:imaginativeshohag@gmail.com">imaginativeshohag@gmail.com</a>
             </li>
 
         </ul>
 
         <div class="social-icons">
-            <a target="_blank" data-toggle="tooltip" tooltip="@imaginativeshohag"
+            <a target="_blank" data-toggle="tooltip" title="@ImaginativeShohag"
                href="https://www.facebook.com/imaginativeshohag" class="el-facebook el-icon-button">
                     <span class="fa-stack fa-lg">
                         <i class="fas fa-square fa-stack-2x"></i>
@@ -275,44 +323,104 @@
                     </span>
             </a>
 
-            <a target="_blank" data-toggle="tooltip" tooltip="@shohag_iw"
+            <a target="_blank" data-toggle="tooltip" title="@shohag_iw"
                href="https://twitter.com/shohag_iw" class="el-twitter el-icon-button">
                     <span class="fa-stack fa-lg">
                         <i class="fas fa-square fa-stack-2x"></i>
                         <i class="fab fa-twitter fa-stack-1x el-black"></i>
                     </span>
             </a>
+
+            <a target="_blank" data-toggle="tooltip" title="@MahmudulHasanShohag"
+               href="https://www.linkedin.com/in/mahmudulhasanshohag/" class="el-linkedin el-icon-button">
+                    <span class="fa-stack fa-lg">
+                        <i class="fas fa-square fa-stack-2x"></i>
+                        <i class="fab fa-linkedin-in fa-stack-1x el-black"></i>
+                    </span>
+            </a>
         </div>
 
     </div>
-
 
     <footer class="section">
         <p class="the-end"></p>
         <div class="credits">
             <p><i class="fas fa-map-marker-alt"></i> <strong>Bangladesh</strong></p>
             <p>
-                This web page coded with <a target="_blank" href="http://getbootstrap.com/">Bootstrap</a>,
-                <a target="_blank" href="https://elrumordelaluz.github.io/csshake/">CSShake</a>,
-                <a target="_blank" href="http://fontawesome.io/">Font Awesome</a>, <a target="_blank"
-                                                                                      href="https://jquery.com">jQuery</a>,
-                <a target="_blank" href="http://vincentgarreau.com/particles.js/">particles.js</a>,
-                <a target="_blank" href="http://tobiasahlin.com/spinkit/">SpinKit</a> and
-                <a target="_blank" href="http://www.mattboldt.com/demos/typed-js/">Typed.js</a> using
-                <del><a target="_blank"
-                        href="https://atom.io/">Atom</a></del>
-                PhpStorm
-                by <abbr data-toggle="tooltip" tooltip="Md. Mahmudul Hasan Shohag">Me</abbr>.
+                This web page coded with
+                <a class="iw-btn" target="_blank" href="https://getbootstrap.com/">Bootstrap</a>,
+                <a class="iw-btn" target="_blank" href="https://elrumordelaluz.github.io/csshake/">CSShake</a>,
+                <a class="iw-btn" target="_blank" href="https://fontawesome.com/">Font Awesome</a>,
+                <a class="iw-btn" target="_blank" href="https://jquery.com">jQuery</a>,
+                <a class="iw-btn" target="_blank" href="https://vincentgarreau.com/particles.js/">particles.js</a>,
+                <a class="iw-btn" target="_blank" href="https://tobiasahlin.com/spinkit/">SpinKit</a>,
+                <a class="iw-btn" target="_blank" href="https://www.mattboldt.com/demos/typed-js/">Typed.js</a> and
+                <a class="iw-btn" target="_blank" href="https://github.com/dimsemenov/photoswipe">PhotoSwipe</a>
+                by <abbr data-toggle="tooltip" title="Md. Mahmudul Hasan Shohag">Me</abbr>.
             </p>
-            <p>Hosting support ― <a target="_blank" href="http://service.luckyfm.info/">Dhrubok All Rounder</a>.</p>
             <p>Please use the latest version of <i class="fab fa-firefox"></i>
                 <strong>Firefox</strong> or <i class="fab fa-chrome"></i> <strong>Chrome</strong> for
                 the best experience.</p>
             <p>
-                <small>Last updated on ― 6 April 2019 (v1.8).</small>
+                <small id="iw-site-info">Last updated on ― X XXX XXXX (vX.X).</small>
             </p>
         </div>
     </footer>
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="pswp__bg"></div>
+
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+
+                <div class="pswp__top-bar">
+
+                    <div class="pswp__counter"></div>
+
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                    <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 
 </div>
@@ -322,20 +430,23 @@
         integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
         crossorigin="anonymous"></script>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
 
-<script src="js/main.min.js?v=1904060000"></script>
+<script src="libs/photoswipe/photoswipe.min.js"></script>
+<script src="libs/photoswipe/photoswipe-ui-default.min.js"></script>
+
+<script src="js/main.min.js?v=2000000000"></script>
 
 </body>
 
