@@ -8,9 +8,9 @@
 - normalize.css
  */
 
-const DELAY_BETWEEN_ELEMENTS_LONG = 1; // 1000
-const DELAY_BETWEEN_ELEMENTS_SHORT = 1; // 500
-const TYPE_SPEED = 1; // 16
+const DELAY_BETWEEN_ELEMENTS_LONG = 500; // 500
+const DELAY_BETWEEN_ELEMENTS_SHORT = 250; // 250
+const TYPE_SPEED = 8; // 8
 const ACTIVE_HINT = "Currently Working";
 const INACTIVE_HINT = "Have Experience";
 
@@ -36,7 +36,7 @@ $(function () {
         stringsElement: '.for-title',
         typeSpeed: TYPE_SPEED,
         startDelay: DELAY_BETWEEN_ELEMENTS_LONG,
-        backDelay: 1500,
+        backDelay: 2000,
         showCursor: false,
         loop: false,
         onComplete: function (self) {
