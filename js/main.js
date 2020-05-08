@@ -8,9 +8,11 @@
 - normalize.css
  */
 
-const DELAY_BETWEEN_ELEMENTS_LONG = 1000; // 1000
-const DELAY_BETWEEN_ELEMENTS_SHORT = 500; // 500
-const TYPE_SPEED = 16; // 16
+const DELAY_BETWEEN_ELEMENTS_LONG = 1; // 1000
+const DELAY_BETWEEN_ELEMENTS_SHORT = 1; // 500
+const TYPE_SPEED = 1; // 16
+const ACTIVE_HINT = "Currently Working";
+const INACTIVE_HINT = "Have Experience";
 
 const objCompareFn = function (a, b) {
     let A = a.name.toUpperCase();
@@ -172,11 +174,13 @@ function initLangSkills(languages) {
 
         const elSpan = document.createElement('span');
         elSpan.innerText = obj.name;
+        elSpan.setAttribute("data-toggle", "tooltip");
 
         if (obj.active) {
             elSpan.classList.add("active");
-            elSpan.setAttribute("data-toggle", "tooltip");
-            elSpan.setAttribute("title", "Recently Working On");
+            elSpan.setAttribute("title", ACTIVE_HINT);
+        } else {
+            elSpan.setAttribute("title", INACTIVE_HINT);
         }
 
         langSkillParent.append(elSpan);
@@ -199,11 +203,13 @@ function initFrameworkSkills(frameworks) {
 
         const elSpan = document.createElement('span');
         elSpan.innerText = obj.name;
+        elSpan.setAttribute("data-toggle", "tooltip");
 
         if (obj.active) {
             elSpan.classList.add("active");
-            elSpan.setAttribute("data-toggle", "tooltip");
-            elSpan.setAttribute("title", "Recently Working On");
+            elSpan.setAttribute("title", ACTIVE_HINT);
+        } else {
+            elSpan.setAttribute("title", INACTIVE_HINT);
         }
 
         techSkillParent.append(elSpan);
@@ -362,7 +368,7 @@ function initLongBio(longBio) {
 
 function initInformation() {
 
-    $.getJSON("json/db.json?v=2", function (data) {
+    $.getJSON("json/db.json?v=4", function (data) {
 
         initSiteInfo(data.info);
 

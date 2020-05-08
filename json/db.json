@@ -1,59 +1,9 @@
 {
     "info": {
-        "version": "2.2",
-        "updated_at": "4 May 2020"
+        "version": "2.3",
+        "updated_at": "8 May 2020"
     },
-    "long_bio": "I’m currently a full-stack <strong>Android</strong> Apps \uD83D\uDCF1 developer and have experience in full-stack <strong>Web</strong> \uD83C\uDF10 development. I’m an <strong>open-source</strong> enthusiast and a die-hard <strong>Linux</strong> \uD83D\uDC27 fan. I love to solve <strong>challenging</strong> problems, working with <strong>new</strong> technologies, and <strong>learn</strong> new things. Alhamdulillah, I’m a <strong>quick learner</strong> and good at <strong>finding bugs</strong> \uD83D\uDC1E. Coding is my passion and hobby. My rule is to maintain all coding conventions and write self-descriptive codes. Finally, I’m <strong>friendly</strong>, <strong>group-oriented</strong>, and <strong>awesome</strong> \uD83D\uDE0E.",
-    "frameworks": [
-        {
-            "name": "Android",
-            "active": true
-        },
-        {
-            "name": "Django",
-            "active": false
-        },
-        {
-            "name": "Laravel",
-            "active": false
-        },
-        {
-            "name": "jQuery",
-            "active": false
-        },
-        {
-            "name": "Firebase: Firestore",
-            "active": false
-        },
-        {
-            "name": "Firebase: Realtime Database",
-            "active": false
-        },
-        {
-            "name": "Firebase: Functions",
-            "active": false
-        },
-        {
-            "name": "Firebase: Authentication",
-            "active": false
-        },
-        {
-            "name": "Google Maps API",
-            "active": true
-        },
-        {
-            "name": "Android Jetpack",
-            "active": true
-        },
-        {
-            "name": "SQLite",
-            "active": true
-        },
-        {
-            "name": "MySQL",
-            "active": false
-        }
-    ],
+    "long_bio": "I’m currently working as a full-stack <strong>Android</strong> Apps \uD83D\uDCF1 developer and have experience in full-stack <strong>Web</strong> \uD83C\uDF10 development. I’m an <strong>open-source</strong> enthusiast and a die-hard <strong>Linux</strong> \uD83D\uDC27 fan. I love to solve <strong>challenging</strong> problems, working with <strong>new</strong> technologies, and <strong>learn</strong> new things. Alhamdulillah, I’m a <strong>quick learner</strong> and good at <strong>finding bugs</strong> \uD83D\uDC1E. Coding is my passion and hobby. My rule is to maintain all coding <strong>conventions</strong> and write <strong>self-descriptive</strong> codes. Finally, I’m <strong>friendly</strong>, <strong>team-oriented</strong>, and <strong>awesome</strong> \uD83D\uDE0E.",
     "languages": [
         {
             "name": "C",
@@ -61,6 +11,10 @@
         },
         {
             "name": "C++",
+            "active": false
+        },
+        {
+            "name": "C#",
             "active": false
         },
         {
@@ -85,6 +39,68 @@
         },
         {
             "name": "Bash",
+            "active": false
+        },
+        {
+            "name": "Visual Basic",
+            "active": false
+        },
+        {
+            "name": "Delphi",
+            "active": false
+        }
+    ],
+    "frameworks": [
+        {
+            "name": "Android",
+            "active": true
+        },
+        {
+            "name": "Django",
+            "active": false
+        },
+        {
+            "name": "Laravel",
+            "active": false
+        },
+        {
+            "name": "jQuery",
+            "active": false
+        },
+        {
+            "name": "Firebase: Firestore",
+            "active": true
+        },
+        {
+            "name": "Firebase: Realtime Database",
+            "active": true
+        },
+        {
+            "name": "Firebase: Functions",
+            "active": true
+        },
+        {
+            "name": "Firebase: Authentication",
+            "active": true
+        },
+        {
+            "name": "Google Maps API",
+            "active": true
+        },
+        {
+            "name": "Android Jetpack",
+            "active": true
+        },
+        {
+            "name": "SQLite",
+            "active": true
+        },
+        {
+            "name": "MySQL",
+            "active": false
+        },
+        {
+            "name": ".Net",
             "active": false
         }
     ],
