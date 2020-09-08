@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Made with Thimble</title>
+    <title>404 - Not Found</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather">
     <style>
         body {
@@ -13,7 +13,7 @@
             font-size: 28px;
             margin: 0;
             color: #fff;
-            background: #c13832;
+            background: #e74c3c;
             text-align: center;
             height: 100%;
         }
@@ -26,7 +26,7 @@
             width: 100%;
             background: rgba(0, 0, 0, .25);
             -webkit-animation: progress 5s ease-out;
-                    animation: progress 5s ease-out;
+            animation: progress 5s ease-out;
             z-index: -1;
         }
 
@@ -41,7 +41,7 @@
 
         @keyframes progress {
             from {
-                width: 0%;
+                width: 0;
             }
             to {
                 width: 100%;
@@ -49,14 +49,18 @@
         }
 
         .content {
-            margin: 32px 16px;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         h1 {
             font-size: 4em;
             margin: 0;
             padding: 0;
-            text-shadow: 3px 3px 0 #c13832, 8px 8px 0 rgba(0, 0, 0, .3);
+            text-shadow: 3px 3px 0 #c0392b, 8px 8px 0 rgba(0, 0, 0, .3);
         }
 
         h1 span {
@@ -64,7 +68,7 @@
         }
 
         p {
-            margin: 32px 0;
+            margin: 32px;
             padding: 0;
             line-height: 1.5em;
         }
@@ -78,29 +82,29 @@
         }
 
         a:hover {
-            border-bottom: 3px solid;
+            border-bottom: 1px solid;
         }
     </style>
 </head>
 
 <body>
-    <div class="progress"></div>
-    <div class="content">
-        <h1>
-            404
-        </h1>
-        <p>
-            You will be redirected to <a href="/">home page</a> within few seconds.
-        </p>
-    </div>
+<div class="progress"></div>
+<div class="content">
+    <h1>
+        404
+    </h1>
+    <p>
+        You will be redirected to <a href="/">home</a> within a few seconds.
+    </p>
+</div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function(event) {
-            setTimeout(function() {
-                window.location = '/';
-            }, 5000);
-        });
-    </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        setTimeout(function () {
+            window.location = '/';
+        }, 5000);
+    });
+</script>
 </body>
 
 </html>

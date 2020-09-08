@@ -366,9 +366,13 @@ function initLongBio(longBio) {
 
 }
 
+function initUrls(urls) {
+    $("a#link-cv").prop("href", urls.cv)
+}
+
 function initInformation() {
 
-    $.getJSON("json/db.json?v=4", function (data) {
+    $.getJSON("json/db.json?v=2009081001", function (data) {
 
         initSiteInfo(data.info);
 
@@ -381,6 +385,8 @@ function initInformation() {
         initAchievements(data.achievements);
 
         initJobs(data.jobs);
+
+        initUrls(data.urls);
 
         $('[data-toggle="tooltip"]').tooltip();
 

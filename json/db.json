@@ -1,7 +1,7 @@
 {
     "info": {
-        "version": "2.4",
-        "updated_at": "8 May 2020"
+        "version": "2.5",
+        "updated_at": "8 September 2020"
     },
     "long_bio": "I’m currently working as a full-stack <strong>Android</strong> Apps \uD83D\uDCF1 developer and have experience in full-stack <strong>Web</strong> \uD83C\uDF10 development. I’m an <strong>open-source</strong> enthusiast and a die-hard <strong>Linux</strong> \uD83D\uDC27 fan. I love to solve <strong>challenging</strong> problems, working with <strong>new</strong> technologies, and <strong>learn</strong> new things. Alhamdulillah, I’m a <strong>quick learner</strong> and good at <strong>finding bugs</strong> \uD83D\uDC1E. Coding is my passion and hobby. My rule is to maintain all coding <strong>conventions</strong> and write <strong>self-descriptive</strong> codes. Finally, I’m <strong>friendly</strong>, <strong>team-oriented</strong>, and <strong>awesome</strong> \uD83D\uDE0E.",
     "languages": [
@@ -56,6 +56,10 @@
             "active": true
         },
         {
+            "name": "Android Jetpack",
+            "active": true
+        },
+        {
             "name": "Django",
             "active": false
         },
@@ -76,11 +80,19 @@
             "active": true
         },
         {
-            "name": "Firebase: Functions",
+            "name": "Firebase: Cloud Functions",
             "active": true
         },
         {
             "name": "Firebase: Authentication",
+            "active": true
+        },
+        {
+            "name": "Firebase: Cloud Messaging (FCM)",
+            "active": true
+        },
+        {
+            "name": "Firebase: Remote Config",
             "active": true
         },
         {
@@ -92,7 +104,7 @@
             "active": true
         },
         {
-            "name": "SQLite",
+            "name": "SQLite/ROOM",
             "active": true
         },
         {
@@ -100,8 +112,16 @@
             "active": false
         },
         {
+            "name": "Realm",
+            "active": true
+        },
+        {
             "name": ".Net",
             "active": false
+        },
+        {
+            "name": "Socket.IO",
+            "active": true
         }
     ],
     "jobs": [
@@ -133,8 +153,7 @@
             "title": "Shadhin Ovidhan Android",
             "tags": [
                 "Android",
-                "Java",
-                "PHP"
+                "Java"
             ],
             "about": "A Bangla-English-Bangla full-featured offline Dictionary.",
             "description": "Self hobby project.",
@@ -153,19 +172,16 @@
         },
         {
             "year": "2016",
-            "title": "ICT Tutor & Shunno Community",
+            "title": "ICT Tutor",
             "tags": [
                 "Android",
                 "Java",
-                "PHP",
                 "jQuery",
                 "HTML",
                 "CSS"
             ],
-            "about": "ICT Tutor is the base of Interactive ICT project. Shunno Community is a full-featured question-answer platform for students, created for Interactive ICT.",
-            "description": "Project Leader and developed with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", which was awarded <strong>1st Runner</strong> up in <strong>EATL Prothom Alo App Contest - 2016</strong>.",
-            "link": "https://ask.imaginativeworld.org",
-            "link_title": "Shunno Community"
+            "about": "The base of Interactive ICT project.",
+            "description": "Project Leader and developed with “<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>”, which was awarded <strong>1st Runner-up</strong> in “<strong>EATL Prothom-Alo App contest - 2016</strong>”."
         },
         {
             "year": "2017",
@@ -175,8 +191,8 @@
                 "W3.CSS",
                 "jQuery"
             ],
-            "about": "A platform for volunteers to maintain their groups and quickly get help on disaster.",
-            "description": "Developed with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", build for disaster management category for <strong>SS12 Project Competition 2017</strong> organized by <strong>IEEE BDS HAC</strong>."
+            "about": "A platform for volunteers to maintain their groups and quickly get help on disasters.",
+            "description": "Developed with “<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>”, build for disaster management category for <strong>SS12 Project Competition 2017</strong> organized by <strong>IEEE BDS HAC</strong>."
         },
         {
             "year": "2017",
@@ -188,7 +204,20 @@
                 "jQuery"
             ],
             "about": "A social-networking web platform for Bangladeshi travelers. The web app can suggest users where to go on a specific season based on historical data.",
-            "description": "Developed with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", which presented in <strong>SUST Hackathon 2017</strong>."
+            "description": "Developed with “<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>”, which presented in <strong>SUST Hackathon 2017</strong>."
+        },
+        {
+            "year": "2017",
+            "title": "Shunno Community",
+            "tags": [
+                "PHP",
+                "jQuery",
+                "MDL front-end component library"
+            ],
+            "about": "A full-featured question-answer platform for students, created for Interactive ICT.",
+            "description": "Was Project Leader and developed it with “<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>”.",
+            "link": "https://ask.imaginativeworld.org",
+            "link_title": "Web App"
         },
         {
             "year": "2017",
@@ -200,8 +229,8 @@
                 "HTML",
                 "CSS"
             ],
-            "about": "An interactive learning app and an alternative to Computer for Inter Students. It has full-featured HTML Editor, C Compiler, SQL Simulator and Encryption Simulator. Its unique and powerful dynamic solution feature can give step by step solution of 18 types of number-system related math problem.",
-            "description": "Was Project Leader and developed it with \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\", which was presented in <strong>App Development Competition</strong> at <strong>IUT 9th ICT Fest 2017</strong> and \"<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>\" was selected as the <strong>Champion</strong>.",
+            "about": "An interactive learning app and an alternative to Computers for Inter Students. It has a full-featured HTML Editor, C Compiler, SQL Simulator, and Encryption Simulator. Its unique and powerful dynamic-solution feature can give step by step solution of 18 types of number-system related math problems.",
+            "description": "Was Project Leader and developed it with “<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>”, which was presented in <strong>App Development Competition</strong> at <strong>IUT 9th ICT Fest 2017</strong>, and “<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>” was selected as the <strong>Champion</strong>. It was downloaded over 5k from the Google Play store.",
             "link": "https://play.google.com/store/apps/details?id=team.shunno.interactiveict",
             "link_title": "Google Play"
         },
@@ -214,7 +243,7 @@
                 "JS"
             ],
             "about": "A full-featured Education Management System for School. It has stuff-teacher-student management, attendance, automated result generation, automated promotion with roll distribution, SMS, advanced search, report generation with print etc.",
-            "description": "Developed with \"Team Shunno\" for KDA IT. My part was designing the front-end and automate the marking, result generation, and roll generation."
+            "description": "Developed with “<a target=\"_blank\" href=\"https://www.facebook.com/TeamShunno/\">Team Shunno</a>” for KDA IT. My part was designing the front-end and automate the marking, result generation, and roll generation."
         },
         {
             "year": "2019",
@@ -222,10 +251,11 @@
             "tags": [
                 "Android",
                 "Java",
-                "PHP"
+                "PHP",
+                "FCM"
             ],
             "about": "BRG Food Delivery is a food delivery app for Barcode Restaurant Group.",
-            "description": "Developed for Octoriz Pvt. Ltd. I designed the layouts, connect the app with the server APIs, implement secure token authentication and authentication related features for the App."
+            "description": "Developed for Octoriz Pvt. Ltd. I designed the layouts, connect the app with the server APIs, implemented a secure token authentication system, and authentication-related features for the App."
         },
         {
             "year": "2019",
@@ -234,11 +264,12 @@
                 "Android",
                 "Java",
                 "Firestore",
+                "Cloud Functions",
                 "GMaps",
                 "FCM"
             ],
             "about": "Locafie is a community-driven school/university bus location sharing-tracking app. Any volunteer from a bus can share real-time bus location and others can track the bus in real-time.",
-            "description": "Developed for Octoriz Pvt. Ltd. I’m the lead developer of this project. I used the Firestore database and Google Maps API to develop this real-time tracking app.",
+            "description": "Developed for Octoriz Pvt. Ltd. I’m the lead developer of this project. It is a server-less real-time vehicle location sharing-tracking app, build with the firestore database, cloud functions, and Google Maps APIs.",
             "link": "https://play.google.com/store/apps/details?id=com.octoriz.locafie",
             "link_title": "Google Play",
             "previews": [
@@ -278,8 +309,130 @@
                     "h": 750
                 }
             ]
+        },
+        {
+            "year": "2019",
+            "title": "MGWPR",
+            "tags": [
+                "Android",
+                "Java"
+            ],
+            "about": "A full-featured Issue Tracking system.",
+            "description": "Developed for Madina Group, from Dream71 Bangladesh Ltd. My notable tasks are — multiple attachments upload feature for issue submit and comments, UI redesign, etc.",
+            "link": "https://play.google.com/store/apps/details?id=com.dream71.modinaissuetracker",
+            "link_title": "Google Play"
+        },
+        {
+            "year": "2019",
+            "title": "Multimedia Classroom Monitoring System",
+            "tags": [
+                "Android",
+                "Java",
+                "Realm",
+                "Socket.IO",
+                "FCM",
+                "Work Manager",
+                "Location",
+                "Build Variant"
+            ],
+            "about": "The project is for monitoring the status of the multimedia classrooms & classes. The app is also used for school/college visit reporting, daily performance reports, and notices for education officers and teachers, etc.",
+            "description": "Developed for a2i, from Dream71 Bangladesh Ltd. Android app for stage 2 of the project developed by me. Notable tasks are — chatting module using socket.io, offline submission for failed submissions (implemented by Work-manager), etc. This app has two versions for DSHE & DPE, separated by the build variant.",
+            "link": "https://play.google.com/store/apps/details?id=com.softbdltd.mmc",
+            "link_title": "Google Play"
+        },
+        {
+            "year": "2020",
+            "title": "Parliament",
+            "tags": [
+                "Android",
+                "Kotlin"
+            ],
+            "about": "Confidential.",
+            "description": "Developed for Bangladesh Parliament from Dream71 Bangladesh Ltd."
+        },
+        {
+            "year": "2020",
+            "title": "Net Metering Appraisal Study ",
+            "tags": [
+                "Android",
+                "Kotlin",
+                "MVVM"
+            ],
+            "about": "A survey and reporting app for solar systems & solar parks.",
+            "description": "Developed for SREDA and UNDP, from Dream71 Bangladesh Ltd. The android app is developed by me. Notable tasks — dynamic, long & complex form design, etc."
+        },
+        {
+            "year": "2020",
+            "title": "Foot Soldier Tracker",
+            "tags": [
+                "Android",
+                "Kotlin",
+                "Realm",
+                "FCM",
+                "GMaps",
+                "Work Manager"
+            ],
+            "about": "Foot Soldier Tracker is used to track the field staff. Field staff can give attendance and sell SIMs & packages from the app.",
+            "description": "Developed for Windmill Advantage, from Dream71 Bangladesh Ltd. I’m the lead developer of this project. My notable tasks are — real-time location tracking (foreground and background), full app offline mode, offline submission, and auto resend later if the internet available, etc.",
+            "link": "https://play.google.com/store/apps/details?id=com.windmillasia.footsoldiertracker",
+            "link_title": "Google Play"
+        },
+        {
+            "year": "2020",
+            "title": "Library: Oops! No Internet!",
+            "tags": [
+                "Android",
+                "Kotlin"
+            ],
+            "about": "Oops! No Internet! No internet dialog and snackbar for the rescue!",
+            "description": "A simple no Internet dialog and snackbar, which will automatically appear and disappear based on Internet connectivity status.",
+            "link": "https://github.com/ImaginativeShohag/Oops-No-Internet",
+            "link_title": "Github"
+        },
+        {
+            "year": "2020",
+            "title": "Library: Why Not! Image Carousel!",
+            "tags": [
+                "Android",
+                "Kotlin"
+            ],
+            "about": "Why Not use Image Carousel if you have lots of images to show!",
+            "description": "An easy, super simple, and customizable image carousel view for Android.",
+            "link": "https://github.com/ImaginativeShohag/Why-Not-Image-Carousel",
+            "link_title": "Github"
+        },
+        {
+            "year": "2020",
+            "title": "Confidence MIS",
+            "tags": [
+                "Android",
+                "Java",
+                "Kotlin",
+                "MVVM",
+                "FCM"
+            ],
+            "about": "A full-featured issue tracker and management information system.",
+            "description": "Developed for Confidence Group, from Dream71 Bangladesh Ltd. My notable tasks are — dynamic forms, complex view for reporting, user-friendly UI designs, etc."
+        },
+        {
+            "year": "2020",
+            "title": "Jolzatra",
+            "tags": [
+                "Android",
+                "Kotlin",
+                "MVVM",
+                "FCM",
+                "SSLCOMMERZ"
+            ],
+            "about": "Jolzatra — A Ticket Reservation System",
+            "description": "Developed for Jolzatra Ltd., from Dream71 Bangladesh Ltd. The android app is developed by me. The app is used for both customers and merchants. Notable tasks are — craft the UI, scan & ticket printing using Sunmi V2 POS device, complex seat layout & cart system design and implementation, SSLCOMMERZ payment gateway implementation, etc.",
+            "link": "https://play.google.com/store/apps/details?id=com.jolzatra.app",
+            "link_title": "Google Play"
         }
-    ]
+    ],
+    "urls": {
+        "cv": "https://docs.google.com/document/d/1XaVJ3J94BpUnxn22tmJXRJ8izB_JdGpIpbYbZWSOfWo/edit?usp=sharing"
+    }
 }
 
 
