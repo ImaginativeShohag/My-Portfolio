@@ -372,7 +372,7 @@ function initUrls(urls) {
 
 function initInformation() {
 
-    $.getJSON("json/db.json?v=2009081001", function (data) {
+    $.getJSON("json/db.json?v=2107100337", function (data) {
 
         initSiteInfo(data.info);
 
