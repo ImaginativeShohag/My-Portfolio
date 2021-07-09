@@ -1,7 +1,7 @@
 {
     "info": {
-        "version": "2.5",
-        "updated_at": "8 September 2020"
+        "version": "2.6",
+        "updated_at": "10 July 2021"
     },
     "long_bio": "I’m currently working as a full-stack <strong>Android</strong> Apps \uD83D\uDCF1 developer and have experience in full-stack <strong>Web</strong> \uD83C\uDF10 development. I’m an <strong>open-source</strong> enthusiast and a die-hard <strong>Linux</strong> \uD83D\uDC27 fan. I love to solve <strong>challenging</strong> problems, working with <strong>new</strong> technologies, and <strong>learn</strong> new things. Alhamdulillah, I’m a <strong>quick learner</strong> and good at <strong>finding bugs</strong> \uD83D\uDC1E. Coding is my passion and hobby. My rule is to maintain all coding <strong>conventions</strong> and write <strong>self-descriptive</strong> codes. Finally, I’m <strong>friendly</strong>, <strong>team-oriented</strong>, and <strong>awesome</strong> \uD83D\uDE0E.",
     "languages": [
@@ -56,7 +56,11 @@
             "active": true
         },
         {
-            "name": "Android Jetpack",
+            "name": "Jetpack Compose",
+            "active": true
+        },
+        {
+            "name": "OneSignal",
             "active": true
         },
         {
@@ -144,6 +148,13 @@
             "web_url": "http://www.dream71.com",
             "position": "Android Developer",
             "start_date": "15 May 2019",
+            "end_date": "29 Oct 2020"
+        },
+        {
+            "company_name": "Softzino Technologies",
+            "web_url": "https://softzino.com",
+            "position": "Software Engineer (Android Development)",
+            "start_date": "2 Nov 2020",
             "end_date": "Present"
         }
     ],
